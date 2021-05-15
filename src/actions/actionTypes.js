@@ -1,0 +1,2 @@
+export const CHANGE_STATUS = "CHANGE_STATUS"
+export const UPDATE_NO_OF_DONE = "UPDATE_NO_OF_DONE"

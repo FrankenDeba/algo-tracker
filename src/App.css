@@ -1,8 +1,66 @@
-.App {
+#root .App {
   text-align: center;
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
+  flex-direction: column;
+  width: 100vw !important;
+  height: 100vh !important;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-image: linear-gradient(to bottom, #00B0FF, #18FFFF) !important; */
+  animation: bg-anim 10s infinite alternate;
+  background-image: linear-gradient(45deg, #ce93d8, #c8e6c9, #b2dfdb, pink);
+  background-size: 400%;
+}
+
+/* .App.gradient-background {
+  height: 600px;
+   background-image: linear-gradient(62deg, #EE7752, #E73C7E, #23A6D5, #23D5AB)!important;
+     animation: gradient 15s ease infinite !important; 
+      background-size: 400% 400% !important;
+} */
+@-webkit-keyframes gradient{
+  0% {
+    background-position: right;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+@keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+
+@keyframes bg-anim {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.cards__holder {
+  height: fit-content;
+  display: flex;
   align-items: center;
 }
+
+:root {
+  --pink: #e5989b;
+  --lightblue: #CDC7E5;
+  --gray: #ddd;
+  --black: #000;
+}
+
+
