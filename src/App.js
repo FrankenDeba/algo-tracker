@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Table from "./component/Table/Table";
 import NavBar from "./component/NavBar/NavBar";
 import Modal from "./component/Modal/Modal";
+import SideBar from "./component/SideBar/SideBar";
 // import vid from "./assets/video.mp4"
 const worker = new Worker("worker.js")
 // import Canvas from "./component/NavBar/NavBar";
@@ -55,12 +56,13 @@ function App() {
       </video> */}
       {showDetailsPopup && 
       <Modal data = {showDetailsPopup} isSmallPopup  modalHeading = "Question Details"/>}
-      <div style = {{...{position: "absolute", left: position[0], top: position[1]}, fontSize: "50px", color: "#fff"}}>{word}</div>
+      {/* <div style = {{...{position: "absolute", left: position[0], top: position[1]}, fontSize: "50px", color: "#fff"}}>{word}</div> */}
       {/* <Canvas /> */}
       <NavBar />
       <div className = "cards__holder">
         <CardsHolder />
       </div>
+      <SideBar />
       {/* <Table showQuesDetails = {showQuesDetails} /> */}
     </div>
     

@@ -1,7 +1,7 @@
 .navbar__container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 10px 15px 10px 0;
     box-sizing: border-box;
     background-color: #b2dfdb;
@@ -28,4 +28,14 @@
 
 .nav__link {
   text-decoration: none;
+}
+
+.logo__container {
+  width: 300px;
+  font-size: 36px;
+  color: #fff;
+  margin-left: 5rem;
+  display: flex;
+  font-family: 'Lobster', cursive;
+  justify-content: space-between;
 }
